@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "kind": "cli",
+  "setup": [
+    ["python3", "-I", "cli.py", "align", "[1, 9]", "[1]", "--band", "1", "--open", "3", "--extend", "1"],
+    ["python3", "-I", "cli.py", "align", "[]", "[]", "--band", "0", "--open", "0", "--extend", "0"]
+  ],
+  "verify": ["python3", "-I", "cli.py", "verify"],
+  "demo": ["python3", "-I", "cli.py", "demo"]
+}
